@@ -16,12 +16,12 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       - name: Compile
-        run: javac src/main/java/ca/review/App.java
+        run: javac src/main/java/ca/dobbs/App.java
       - name: Run Java
-        run: java -cp src/main/java/ ca.review.App
+        run: java -cp src/main/java/ ca.dobbs.App
       - name: Build with Maven
         run: mvn compile
       - name: Run Tests
         run: mvn test
       - name: Run Application
-        run: mvn exec:java -Dexec.mainClass="ca.review.App"
+        run: mvn exec:java -Dexec.mainClass="ca.dobbs.App"
